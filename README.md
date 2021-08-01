@@ -34,14 +34,19 @@ chmod +x file_name.py
 Then open another terminal in the package you cloned and run the following code:
 
 ```sh
-cd catkin_ws
-cd src/bin_project
-cd src
+cd catkin_ws/src/bin_project/src
 rosrun bin_projet bin_server.py
 ```
 
 ### rostopic
-Then run this code:
+Then run this code on a new terminal in the same repertory:
 ```sh
 rostopic echo /bin_state
 ``` 
+The states of the bins will be displayed.
+
+### Simulation
+Then for the simulation, run this code:
+```sh 
+./run.sh
+```
